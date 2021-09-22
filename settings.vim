@@ -1,6 +1,5 @@
 " Settings 
 
-set cmdheight=2
 set encoding=utf-8
 set number
 set relativenumber
@@ -17,10 +16,11 @@ set nobackup
 set noerrorbells
 set nowritebackup
 set updatetime=50
-set timeoutlen=500
+set timeoutlen=300
 set ttimeoutlen=5
-set clipboard=unnamedplus
-set laststatus=2
+set wildmode="longest:list"               
+set ttyfast
+set clipboard+=unnamedplus
 set mouse=a
 set tabstop=2
 set shiftwidth=2
@@ -29,9 +29,10 @@ set softtabstop=2
 set nowrap
 set t_Co=256
 set termguicolors
-set shortmess=A
 set noshowmode
 set splitright
 set splitbelow
 set lazyredraw
 set magic
+set completeopt=menuone,noinsert,noselect
+set shortmess+=A
