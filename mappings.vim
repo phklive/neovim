@@ -1,7 +1,7 @@
 " Mappings 
 
 " leader
-let mapleader = " "
+let mapleader = ","
 
 " global mappings 
 nnoremap <silent> <leader>p :bn<CR>
@@ -13,19 +13,6 @@ nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
 " nerdtree mappings
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
-
-map s <Plug>Sneak_s
-map S <Plug>Sneak_S
-map f <Plug>Sneak_f
-map F <Plug>Sneak_F
-map t <Plug>Sneak_t
-map T <Plug>Sneak_T
-
-" vimux mappings 
-" Run the current file with rspec
-map <Leader>rb :call VimuxRunCommand("clear; rspec " . bufname("%"))<CR>
-" Run command without sending a return
-map <Leader>rq :call VimuxRunCommand("clear; rspec " . bufname("%"), 0)<CR>
 
 " telescope mappings
 " Find files using Telescope command-line sugar.
@@ -41,9 +28,46 @@ nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
-nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
-nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+"nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+"nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
+nnoremap <leader>v :tabe ~/.config/nvim/configuration.vim <cr>
+autocmd bufwritepost .vimrc source $MYVIMRC
 
+nnoremap Y yg_     
 
+nnoremap cm *``cgn
+nnoremap cN *``cgN
 
+nnoremap ; :
+vnoremap ; :
+
+cmap w!! %!sudo tee > /dev/null %
+
+nnoremap n nzz
+nnoremap N Nzz
+
+nnoremap H ^
+nnoremap L $
+
+nmap <leader>' ysiw' 
+nmap <leader>" ysiw" 
+nmap <leader>` ysiw` 
+nmap <leader>( ysiw( 
+nmap <leader>) ysiw) 
+nmap <leader>{ ysiw{ 
+nmap <leader>} ysiw} 
+nmap <leader>[ ysiw[ 
+nmap <leader>] ysiw] 
+nmap <leader>/ ysiw/ 
+
+nnoremap zz :w\|bd<cr>
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" imap tn <esc>
