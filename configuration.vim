@@ -12,7 +12,6 @@ let g:dashboard_custom_header = [
 \]
 
 let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:rainbow_active = 1
 
 lua << EOF
 
@@ -183,9 +182,9 @@ mapping = {
   
  sources = {
       { name = 'vsnip' },
-      { name = 'nvim_lsp',
-        max_item_count = 3,},
-      { name = 'buffer' },
+      { name = 'nvim_lsp'},
+      { name = 'buffer',
+        max_item_count=3},
     }
   })
 

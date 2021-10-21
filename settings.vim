@@ -2,6 +2,9 @@
 
 " set mouse=a
 
+set autoindent
+set iskeyword+=_
+set fillchars+=eob:\ ,
 set encoding=utf-8
 set number
 set relativenumber
