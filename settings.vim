@@ -8,7 +8,6 @@ set visualbell
 set laststatus=2
 set encoding=utf-8
 set number
-set linebreak
 set relativenumber
 set hidden
 set smartcase
@@ -41,3 +40,4 @@ set shortmess+=A
 set noruler
 set signcolumn=yes
 set completeopt=menu,menuone,noselect
+set pumheight=20

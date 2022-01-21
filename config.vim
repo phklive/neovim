@@ -24,6 +24,23 @@ require'nvim-treesitter.configs'.setup {
  indent = {
           enable = true,
   },
+ ensure_installed = {
+          "tsx",
+          "json",
+          "scss",
+          "css",
+          "html",
+          "javascript",
+          "typescript",
+          "bash",
+          "fish",
+          "graphql",
+          "prisma",
+          "python",
+          "vim",
+          "svelte",
+          "lua"
+  },
 }
 
  require("indent_blankline").setup {
@@ -43,6 +60,8 @@ hidden = true
 EOF
 
 let g:tagalong_additional_filetypes = ['javascript', 'typescript']
+
+let g:UltiSnipsExpandTrigger="<C-q>"
 
 augroup highlight_yank
     autocmd!

@@ -44,4 +44,4 @@ nmap <leader>] ysiw]
 nmap <leader>/ ysiw/ 
 
 nnoremap <C-v> :vsplit<CR>
-nnoremap <C-\> :split<CR>
+nnoremap <C-q> :split<CR>

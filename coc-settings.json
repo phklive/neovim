@@ -1,0 +1,23 @@
+{
+  "suggest.removeDuplicateItems": true,
+  "suggest.enablePreview": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "graphql",
+    "html",
+    "json",
+    "yaml",
+    "python",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "css"
+  ],
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "~/.config/nvim/utils/snips"
+  ]
+}
