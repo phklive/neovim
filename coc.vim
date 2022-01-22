@@ -56,7 +56,7 @@ augroup mygroup
 augroup end
 
 " Add `:Format` command to format current buffer.
-" command! -nargs=0 Format :call CocActionAsync('format')
+command! -nargs=0 Format :call CocActionAsync('format')
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
@@ -98,5 +98,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
