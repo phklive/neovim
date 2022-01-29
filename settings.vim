@@ -24,7 +24,7 @@ set nowritebackup
 set updatetime=100
 set cmdheight=1
 set noerrorbells
-set clipboard=unnamed
+set clipboard+=unnamedplus
 set tabstop=2
 set shiftwidth=2
 set nohlsearch
@@ -39,5 +39,5 @@ set magic
 set shortmess+=A
 set noruler
 set signcolumn=yes
-set completeopt=menu,menuone,noselect
+set completeopt=menuone,noselect
 set pumheight=20
